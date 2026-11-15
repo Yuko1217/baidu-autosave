@@ -35,6 +35,9 @@ jobs:
           requirements.txt
           constraints.txt
 
+    - name: Install setuptools
+      run: pip install --upgrade setuptools
+      
     - name: Install dependencies
       run: bash scripts/install_dependencies.sh runtime
 
