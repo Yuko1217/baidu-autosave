@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: pip install --upgrade setuptools baidupcs-py
       - name: Run transfer task
-        run: python autosave.py
+        run: python transfer_runner.py
         env:
           BAIDU_COOKIES: ${{ secrets.BAIDU_COOKIES }}
           SHARE_URLS: ${{ secrets.SHARE_URLS }}
